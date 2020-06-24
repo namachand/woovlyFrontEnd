@@ -1,0 +1,34 @@
+.binbucket:hover{
+    opacity: 0.8;
+    transition-duration: 0.4s;
+}
+.symbol{
+    position: absolute;
+    bottom:11vh;
+    color:white
+}
+#heart:hover{
+    transform: scale(1.3);
+    transition-duration: 0.3s;
+
+}
+#plus:hover{
+    color:red;
+    transform: scale(1.3);
+    transition-duration: 0.3s;
+
+}
+#upload:hover{
+    transform: scale(1.3);
+    transition-duration: 0.3s;
+
+}
+.btn {
+    position: absolute;
+    bottom:11vh;
+    text-align:center;
+    cursor:pointer;
+    transition-duration: 0.25s;
+    background-color:transparent;
+    opacity: 0.8;
+}
