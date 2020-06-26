@@ -9,24 +9,26 @@ class Home extends React.Component{
     constructor(props){
         super(props)
         this.state={
-            data:DATA,
+            data:[],
             showModal:false,
             discriptionfor:''
         }
         this.openForm=this.openForm.bind(this);
         this.handleClose=this.handleClose.bind(this);
-    }
-
+        }
+    componentDidMount(){
+        this.setState({data:DATA})
+        }
     openForm(event){
         event.preventDefault();
         this.setState({discriptionfor:event.target.value})
         this.setState({showModal:true});
 
-    }
+        }
     handleClose(event){
         this.setState({showModal:false})
 
-    }
+        }
     render(){
         console.log(this.state.img)
       return (  
